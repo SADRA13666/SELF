@@ -10,5 +10,5 @@ python Sel.py <br>
 pkg install git <br>
 git clone https://github.com/SADRA13666/SELF.git <br>
 ls <br>
-cd Save <br>
-python Save.py <br>
+cd SEL <br>
+python SEL.py <br>
