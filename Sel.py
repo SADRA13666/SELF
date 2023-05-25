@@ -63,10 +63,12 @@ if not "data.json" in os.listdir():
         data = {"timename":"off","timebio":"off","timeprof":"off","bot":"on","hashtag":"off","bold":"off","italic":"off","delete":"off","code":"off","underline":"off","reverse":"off","part":"off","mention":"off","comment":"on","text":"first !","typing":"off","game":"off","voice":"off","video":"off","sticker":"off","crash":[],"enemy":[]}
         put("data.json",data)
 
-api_id = ####
-api_hash = "##"##
-session_name = '1'
-bot = TelegramClient(session_name, api_id, api_hash)
+from telethon.sync import TelegramClient, events
+import os
+api_id = input("Please Enter API ID : ")
+api_hash = input("Please Enter API Hash : ")
+session_name = 'THE SADRA DEV. LOVER'
+bot = TelegramClient(session_name, api_id, api_hash).start()
 
 @aiocron.crontab('*/1 * * * *')
 async def clock():
